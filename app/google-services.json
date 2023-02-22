@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "576910481027",
+    "project_id": "esm-mobile-92308",
+    "storage_bucket": "esm-mobile-92308.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:576910481027:android:fc51fce55da997ef58edb6",
+        "android_client_info": {
+          "package_name": "com.example.esmmobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "576910481027-l58rul1omke4laagqhhp3f73m9pf7215.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbbTKmZ-S11e4qWLUf9MzTS4tD52A9ce0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "576910481027-l58rul1omke4laagqhhp3f73m9pf7215.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
