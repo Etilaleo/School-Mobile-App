@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeFragment"
+        android:title="@string/home"
+        android:icon="@drawable/home"/>
 
+    <item
+        android:id="@+id/coursesFragment"
+        android:title="@string/courses"
+        android:icon="@drawable/courses"/>
+
+    <item
+        android:id="@+id/eventsFragment"
+        android:title="@string/events"
+        android:icon="@drawable/events"/>
+
+    <item
+        android:id="@+id/profileFragment"
+        android:title="@string/profile"
+        android:icon="@drawable/profile"/>
 
 </menu>

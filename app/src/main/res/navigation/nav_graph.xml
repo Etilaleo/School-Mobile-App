@@ -11,4 +11,19 @@
         android:name="com.example.esmmobile.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/coursesFragment"
+        android:name="com.example.esmmobile.CoursesFragment"
+        android:label="fragment_courses"
+        tools:layout="@layout/fragment_courses" />
+    <fragment
+        android:id="@+id/eventsFragment"
+        android:name="com.example.esmmobile.EventsFragment"
+        android:label="fragment_events"
+        tools:layout="@layout/fragment_events" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.esmmobile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
 </navigation>

@@ -33,4 +33,9 @@
         <item name="android:textSize">18sp</item>
         <item name="android:textAllCaps">true</item>
     </style>
+
+    <style name="bottomNavView">
+        <item name="itemIconTint">#1165F6</item>
+        <item name="itemTextColor">#1165F6</item>
+    </style>
 </resources>
