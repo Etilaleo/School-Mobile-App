@@ -26,6 +26,7 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor">@color/esm_color</item>
         <!-- Customize your theme here. -->
+        <item name="colorControlNormal">@color/white</item>
     </style>
 
     <style name="button">
@@ -37,5 +38,9 @@
     <style name="bottomNavView">
         <item name="itemIconTint">#2C08DC</item>
         <item name="itemTextColor">#2C08DC</item>
+    </style>
+
+    <style name="background_nav_bar">
+        <item name="android:background">#191970</item>
     </style>
 </resources>

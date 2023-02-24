@@ -26,6 +26,7 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+        <item name="colorControlNormal">@color/white</item>
     </style>
 
     <style name="button">
@@ -38,4 +39,9 @@
         <item name="itemIconTint">#1165F6</item>
         <item name="itemTextColor">#1165F6</item>
     </style>
+
+    <style name="background_nav_bar">
+        <item name="android:background">#EDEADE</item>
+    </style>
+
 </resources>
