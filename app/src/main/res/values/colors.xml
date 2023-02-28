@@ -8,5 +8,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="esm_color">#130C36</color>
-    <color name="dark_esm_color">#260D9F</color>
+    <color name="dark_esm_color">#360FF7</color>
+    <color name="milk">#EDEADE</color>
+    <color name="esm_red">#F90100</color>
 </resources>

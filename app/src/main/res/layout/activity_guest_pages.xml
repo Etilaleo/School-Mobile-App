@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/drawerLayout"
-    tools:openDrawer="start"
     tools:context=".GuestPages">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -24,7 +23,8 @@
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
-                android:background="@color/esm_color"/>
+                android:background="@color/esm_color"
+                app:titleTextColor="@color/white"/>
 
         </com.google.android.material.appbar.AppBarLayout>
 

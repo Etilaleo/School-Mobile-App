@@ -6,9 +6,13 @@
     app:startDestination="@id/guestHomeFragment">
     <fragment
         android:id="@+id/guestHomeFragment"
-        android:name="com.example.esmmobile.GuestHomeFragment"
+        android:name="com.example.esmmobile.guestScreen.GuestHomeFragment"
         android:label="fragment_guest_home"
-        tools:layout="@layout/fragment_guest_home" />
+        tools:layout="@layout/fragment_guest_home" >
+        <action
+            android:id="@+id/action_guestHomeFragment_to_login2"
+            app:destination="@id/login2" />
+    </fragment>
     <activity
         android:id="@+id/login2"
         android:name="com.example.esmmobile.Login"

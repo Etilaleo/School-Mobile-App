@@ -1,4 +1,4 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources >
     <!-- Base application theme. -->
     <style name="Theme.EsmMobile" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
@@ -41,7 +41,17 @@
     </style>
 
     <style name="background_nav_bar">
-        <item name="android:background">#EDEADE</item>
+        <item name="android:background">@color/milk</item>
+    </style>
+
+    <style name="materialColor">
+        <item name="android:backgroundTint">@color/esm_red</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="guestButtonStyle">
+        <item name="android:backgroundTint">@color/esm_color</item>
+        <item name="android:textSize">18sp</item>
     </style>
 
 </resources>

@@ -18,10 +18,6 @@ class SplashScreen : AppCompatActivity() {
         binding = ActivitySplashScreenBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val animation = AnimationUtils.loadAnimation(this, R.anim.splash_animation)
-        animation.duration = 2000
-        binding.splashImage.startAnimation(animation)
-
         Handler(Looper.getMainLooper()).postDelayed({
             startActivity(Intent(this, GuestPages::class.java))
             finish()
