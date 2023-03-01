@@ -54,6 +54,8 @@ class GuestHomeFragment : Fragment() {
         animation.duration = 1500
         binding.admissionOpenLayout.startAnimation(animation)
 
-
+        binding.applyNowButton.setOnClickListener {
+            findNavController().navigate(R.id.action_guestHomeFragment_to_applyNowFragment)
+        }
     }
 }

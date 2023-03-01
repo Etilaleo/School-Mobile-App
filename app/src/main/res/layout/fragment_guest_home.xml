@@ -62,6 +62,7 @@
                         android:textStyle="bold" />
 
                     <com.google.android.material.button.MaterialButton
+                        android:id="@+id/applyNowButton"
                         style="@style/guestButtonStyle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -114,6 +115,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/studyAtDescription" />
 
             <com.google.android.material.button.MaterialButton
+                android:id="@+id/undergraduateCourseButton"
                 style="@style/guestButtonStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -186,6 +188,7 @@
                         android:textSize="20sp" />
 
                     <com.google.android.material.button.MaterialButton
+                        android:id="@+id/exploreSportsButton"
                         style="@style/guestButtonStyle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"

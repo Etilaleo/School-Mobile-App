@@ -17,6 +17,7 @@
         android:title="@string/duration_and_fees"/>
 
     <item
+        android:id="@+id/applyNowFragment"
         android:title="@string/apply_now"/>
 
 </menu>

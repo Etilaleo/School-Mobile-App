@@ -27,4 +27,10 @@
     <string name="explore_header">Life at ESM University</string>
     <string name="explore_message">Be your best self in a network of students, engaging in sporting and social activities</string>
     <string name="contact_us">Contact us</string>
+    <string name="application_requirements">Application Requirements</string>
+    <string name="application_description"><![CDATA[● 5 O\'level Credit Passes Including [English | Mathematics & Three Relevant Subject In Not More Than Two Sitting]. \n● Candidate With WAEC | NECO | OND or A\'level Qualification Shall Be Considered For 200 Level. \n● International Passport. \n● Birth Certificate. \n● State Of Origin. \n● Five(5) Passport Photographs.]]></string>
+    <string name="note_description">***Note** \n If you meet the stated requirements and have not filled the the registration form, fill the form below.</string>
+    <string name="full_name">Full Name</string>
+    <string name="email">Email</string>
+    <string name="_20_02_2022">20/02/2022</string>
 </resources>

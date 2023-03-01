@@ -54,4 +54,9 @@
         <item name="android:textSize">18sp</item>
     </style>
 
+    <style name="applyMaterialColor">
+        <item name="android:backgroundTint">#E0E6F3</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
 </resources>
