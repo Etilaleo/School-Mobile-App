@@ -20,9 +20,11 @@
     <string name="duration_and_fees">DURATION AND FEES</string>
     <string name="apply_now">APPLY NOW</string>
     <string name="admissions_open_n_july_2023">Admissions open \n july 2023</string>
-    <string name="apply">Apply</string>
     <string name="study_at_esm_university">Study at ESM University</string>
     <string name="studyAtDescription">Get a new experience of your subject at ESM University as you learn and connect with people from all over the world.</string>
     <string name="undergraduate_courses">Undergraduate Courses</string>
-    <string name="loginMenu">login</string>
+    <string name="explore_button">Explore our sports/social wall</string>
+    <string name="explore_header">Life at ESM University</string>
+    <string name="explore_message">Be your best self in a network of students, engaging in sporting and social activities</string>
+    <string name="contact_us">Contact us</string>
 </resources>
