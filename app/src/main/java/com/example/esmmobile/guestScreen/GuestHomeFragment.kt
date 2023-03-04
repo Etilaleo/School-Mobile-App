@@ -21,14 +21,15 @@ class GuestHomeFragment : Fragment() {
     ): View {
         // Inflate the layout for this fragment
         binding = FragmentGuestHomeBinding.inflate(layoutInflater)
+
+        val actionBar = (activity as AppCompatActivity).supportActionBar!!
+        actionBar.title = getString(R.string.app_name)
+
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-        val actionBar = (activity as AppCompatActivity).supportActionBar!!
-        actionBar.title = "Esm Mobile"
 
 
         //Creating a loginMenu

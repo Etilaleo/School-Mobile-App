@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
+import com.example.esmmobile.R
 import com.example.esmmobile.databinding.FragmentApplyNowBinding
 
 class ApplyNowFragment : Fragment() {
@@ -19,7 +20,7 @@ class ApplyNowFragment : Fragment() {
         binding = FragmentApplyNowBinding.inflate(layoutInflater)
 
         val actionBar = (activity as AppCompatActivity).supportActionBar!!
-        actionBar.title = "Apply Now"
+        actionBar.title = getString(R.string.apply_now)
 
         return binding.root
     }
