@@ -28,5 +28,15 @@ class ApplyNowFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        binding.fillFormBtn.setOnClickListener {
+            if (binding.formMaterialCard.visibility == View.GONE) {
+                binding.formMaterialCard.visibility = View.VISIBLE
+            }
+            else {
+                binding.formMaterialCard.visibility = View.GONE
+            }
+
+
+        }
     }
 }
