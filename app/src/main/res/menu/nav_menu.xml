@@ -4,20 +4,24 @@
     tools:showIn = "navigation_view">
     <item
         android:id="@+id/guestHomeFragment"
-        android:title="@string/home_menu"/>
-
-    <item
-        android:title="@string/our_courses"/>
+        android:title="@string/home_menu"
+        android:icon="@drawable/home"/>
 
     <item
         android:id="@+id/login2"
-        android:title="@string/login_menu"/>
-
-    <item
-        android:title="@string/duration_and_fees"/>
+        android:title="@string/login_menu"
+        android:icon="@drawable/profile"/>
 
     <item
         android:id="@+id/applyNowFragment"
-        android:title="@string/apply_now"/>
+        android:title="@string/apply_now"
+        android:icon="@drawable/apply_now"/>
 
+    <item
+        android:title="@string/our_courses"
+        android:icon="@drawable/our_courses"/>
+
+    <item
+        android:title="@string/duration_and_fees"
+        android:icon="@drawable/fees"/>
 </menu>

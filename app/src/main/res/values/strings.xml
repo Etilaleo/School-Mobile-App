@@ -34,4 +34,8 @@
     <string name="last_name">Last Name</string>
     <string name="email">Email</string>
     <string name="_20_02_2022">20/02/2022</string>
+    <string name="fill_the_form">Fill The Form</string>
+    <string name="about">ABOUT</string>
+    <string name="share">SHARE</string>
+    <string name="small_about">About</string>
 </resources>

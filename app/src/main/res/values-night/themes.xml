@@ -36,8 +36,8 @@
     </style>
 
     <style name="bottomNavView">
-        <item name="itemIconTint">#1165F6</item>
-        <item name="itemTextColor">#1165F6</item>
+        <item name="itemIconTint">#E0E6F3</item>
+        <item name="itemTextColor">#E0E6F3</item>
     </style>
 
     <style name="background_nav_bar">

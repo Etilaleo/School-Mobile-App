@@ -50,8 +50,11 @@
             android:id="@+id/fillFormBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Fill the form"
+            android:text="@string/fill_the_form"
+            android:textAllCaps="false"
             android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/esm_color"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/note"/>
 
@@ -146,6 +149,8 @@
                         android:inputType="numberDecimal" />
 
                 </com.google.android.material.textfield.TextInputLayout>
+
+
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
