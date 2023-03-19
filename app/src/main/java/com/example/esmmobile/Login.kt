@@ -1,5 +1,6 @@
 package com.example.esmmobile
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.esmmobile.databinding.ActivityLoginBinding
@@ -17,6 +18,11 @@ class Login : AppCompatActivity() {
         setContentView(binding.root)
 
         supportActionBar?.hide()
+
+        binding.login.setOnClickListener {
+            startActivity(Intent(this, MainActivity::class.java))
+            finish()
+        }
 
 //        auth = FirebaseAuth.getInstance()
 //        dbRef = FirebaseDatabase.getInstance().getReference("UserData")

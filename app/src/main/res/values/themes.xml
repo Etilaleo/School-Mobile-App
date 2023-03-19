@@ -59,4 +59,9 @@
         <item name="android:textColor">@color/black</item>
     </style>
 
+    <style name="imageSlider">
+        <item name="android:background">#E0E6F3</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
 </resources>
