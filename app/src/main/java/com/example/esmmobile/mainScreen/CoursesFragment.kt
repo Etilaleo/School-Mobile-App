@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.app.AppCompatActivity
+import com.example.esmmobile.R
 import com.example.esmmobile.databinding.FragmentCoursesBinding
 
 class CoursesFragment : Fragment() {
@@ -19,5 +21,11 @@ class CoursesFragment : Fragment() {
         return binding.root
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
 
+        val actionBarTitle = getString(R.string.courses)
+        val actionBar  = (activity as AppCompatActivity).supportActionBar!!
+        actionBar.title = "| ${actionBarTitle.uppercase()}"
+    }
 }

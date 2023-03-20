@@ -22,8 +22,9 @@ class GuestHomeFragment : Fragment() {
         // Inflate the layout for this fragment
         binding = FragmentGuestHomeBinding.inflate(layoutInflater)
 
-        val actionBar = (activity as AppCompatActivity).supportActionBar!!
-        actionBar.title = getString(R.string.app_name)
+        val actionBarTitle = getString(R.string.app_name)
+        val actionBar  = (activity as AppCompatActivity).supportActionBar!!
+        actionBar.title = actionBarTitle.uppercase()
 
         return binding.root
     }
