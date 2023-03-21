@@ -40,4 +40,6 @@
     <string name="small_about">About</string>
     <string name="announcement">Announcement</string>
     <string name="my_courses">My Courses</string>
+    <string name="programming_language">Programming Language</string>
+    <string name="cme_121">CME 121</string>
 </resources>

@@ -6,8 +6,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.esmmobile.R
+import com.example.esmmobile.adapters.PdfCourseAdapter
 import com.example.esmmobile.databinding.FragmentCoursesBinding
+import com.example.esmmobile.models.PdfCourseData
 
 class CoursesFragment : Fragment() {
 
@@ -26,6 +29,18 @@ class CoursesFragment : Fragment() {
 
         val actionBarTitle = getString(R.string.courses)
         val actionBar  = (activity as AppCompatActivity).supportActionBar!!
-        actionBar.title = "| ${actionBarTitle.uppercase()}"
+        actionBar.title = "| $actionBarTitle"
+
+        val courseList = arrayListOf<PdfCourseData>()
+        courseList.add(PdfCourseData("Software Engineering", "CME 401", R.drawable.remake_software_dev))
+        courseList.add(PdfCourseData("Computer Programming", "CME 424", R.drawable.programming_language))
+
+        val pdfAdapter = PdfCourseAdapter(requireContext(), courseList)
+        binding.courses.apply {
+            setHasFixedSize(true)
+            layoutManager = LinearLayoutManager(requireContext())
+            adapter = pdfAdapter
+        }
+
     }
 }

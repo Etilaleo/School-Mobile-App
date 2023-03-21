@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     app:cardElevation="20dp"
+    style="@style/applyMaterialColor"
     android:layout_margin="10dp"
     app:cardCornerRadius="15dp"
     android:padding="18dp">
@@ -18,7 +18,7 @@
             android:layout_width="match_parent"
             android:layout_height="140dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/programming_language"
+            android:src="@drawable/remake_software_dev"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -28,7 +28,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Programming Language"
+            android:text="@string/programming_language"
             android:textSize="16sp"
             android:paddingStart="10dp"
             android:paddingTop="10dp"
@@ -42,7 +42,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="CME 121"
+            android:text="@string/cme_121"
             android:textSize="14sp"
             android:paddingEnd="10dp"
             android:paddingStart="10dp"

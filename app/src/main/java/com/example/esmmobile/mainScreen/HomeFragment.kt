@@ -27,11 +27,6 @@ class HomeFragment : Fragment() {
 
         val actionBarTitle = getString(R.string.app_name)
         val actionBar  = (activity as AppCompatActivity).supportActionBar!!
-        actionBar.title = "| ${actionBarTitle.uppercase()}"
-
-        val imageSliderList = ArrayList<SlideModel>()
-        imageSliderList.add(SlideModel(R.drawable.esm_logo))
-
-        binding.imageSlider.setImageList(imageSliderList)
+        actionBar.title = "| $actionBarTitle"
     }
 }
