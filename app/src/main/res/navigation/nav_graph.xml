@@ -8,12 +8,12 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.example.esmmobile.mainScreen.HomeFragment"
+        android:name="com.example.esmmobile.ui.mainScreen.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
     <fragment
         android:id="@+id/coursesFragment"
-        android:name="com.example.esmmobile.mainScreen.CoursesFragment"
+        android:name="com.example.esmmobile.ui.mainScreen.CoursesFragment"
         android:label="fragment_courses"
         tools:layout="@layout/fragment_courses" >
         <action
@@ -22,17 +22,17 @@
     </fragment>
     <fragment
         android:id="@+id/eventsFragment"
-        android:name="com.example.esmmobile.mainScreen.EventsFragment"
+        android:name="com.example.esmmobile.ui.mainScreen.EventsFragment"
         android:label="fragment_events"
         tools:layout="@layout/fragment_events" />
     <fragment
         android:id="@+id/profileFragment"
-        android:name="com.example.esmmobile.mainScreen.ProfileFragment"
+        android:name="com.example.esmmobile.ui.mainScreen.ProfileFragment"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" />
     <fragment
         android:id="@+id/pdfViewFragment"
-        android:name="com.example.esmmobile.mainScreen.PdfViewFragment"
+        android:name="com.example.esmmobile.ui.mainScreen.PdfViewFragment"
         android:label="fragment_pdf_view_fragmet"
         tools:layout="@layout/fragment_pdf_view_fragmet" />
 </navigation>

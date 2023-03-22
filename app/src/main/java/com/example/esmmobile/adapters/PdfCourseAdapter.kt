@@ -16,6 +16,9 @@ class PdfCourseAdapter(
 )
     :RecyclerView.Adapter<PdfCourseAdapter.PdfCourseViewHolder>() {
 
+    //Creating an on click for the pdf
+    var pdfCourseClick : ((PdfCourseData) -> Unit)? = null
+
     inner class PdfCourseViewHolder(itemView : View) : RecyclerView.ViewHolder(itemView) {
         val title: TextView = itemView.findViewById(R.id.coursePdfTitle)
         val code: TextView = itemView.findViewById(R.id.coursePdfCode)
@@ -34,6 +37,11 @@ class PdfCourseAdapter(
         holder.title.text = pos.courseTitle
         holder.code.text = pos.courseCode
         Picasso.get().load(pos.courseImage).into(holder.image)
+
+        //Getting the values of the clicked item.
+        holder.itemView.setOnClickListener{
+            pdfCourseClick?.invoke(PdfCourseData(pos.courseTitle, pos.courseCode, pos.courseImage))
+        }
 
     }
 

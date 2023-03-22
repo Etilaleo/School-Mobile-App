@@ -1,9 +1,10 @@
-package com.example.esmmobile
+package com.example.esmmobile.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.NavigationUI.setupWithNavController
+import com.example.esmmobile.R
 import com.example.esmmobile.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {

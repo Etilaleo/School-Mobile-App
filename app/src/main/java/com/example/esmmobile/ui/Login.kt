@@ -1,4 +1,4 @@
-package com.example.esmmobile
+package com.example.esmmobile.ui
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity

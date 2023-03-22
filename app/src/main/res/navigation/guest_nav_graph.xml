@@ -6,7 +6,7 @@
     app:startDestination="@id/guestHomeFragment">
     <fragment
         android:id="@+id/guestHomeFragment"
-        android:name="com.example.esmmobile.guestScreen.GuestHomeFragment"
+        android:name="com.example.esmmobile.ui.guestScreen.GuestHomeFragment"
         android:label="fragment_guest_home"
         tools:layout="@layout/fragment_guest_home" >
         <action
@@ -18,12 +18,12 @@
     </fragment>
     <activity
         android:id="@+id/login2"
-        android:name="com.example.esmmobile.Login"
+        android:name="com.example.esmmobile.ui.Login"
         android:label="activity_login"
         tools:layout="@layout/activity_login" />
     <fragment
         android:id="@+id/applyNowFragment"
-        android:name="com.example.esmmobile.guestScreen.ApplyNowFragment"
+        android:name="com.example.esmmobile.ui.guestScreen.ApplyNowFragment"
         android:label="fragment_apply_now"
         tools:layout="@layout/fragment_apply_now" />
 </navigation>

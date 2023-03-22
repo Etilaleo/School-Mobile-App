@@ -1,4 +1,4 @@
-package com.example.esmmobile.guestScreen
+package com.example.esmmobile.ui.guestScreen
 
 import android.os.Bundle
 import android.view.*

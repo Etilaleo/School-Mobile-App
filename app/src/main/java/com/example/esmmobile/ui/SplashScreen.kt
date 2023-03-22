@@ -1,4 +1,4 @@
-package com.example.esmmobile
+package com.example.esmmobile.ui
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -6,7 +6,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
-import android.view.animation.AnimationUtils
 import com.example.esmmobile.databinding.ActivitySplashScreenBinding
 
 @SuppressLint("CustomSplashScreen")
