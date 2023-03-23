@@ -1,14 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
     tools:context=".ui.mainScreen.ProfileFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
 
-</FrameLayout>
+      <ImageView
+          android:id="@+id/pic"
+          android:layout_width="wrap_content"
+          android:layout_height="230dp"
+          android:scaleType="centerCrop"
+          android:src="@drawable/esm_building"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent" />
+
+      <include
+          android:id="@+id/studentDetails"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="150dp"
+          android:layout_marginStart="20dp"
+          android:layout_marginEnd="20dp"
+          layout="@layout/student_details"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent" />
+
+      <de.hdodenhof.circleimageview.CircleImageView
+          android:id="@+id/profile_image"
+          android:layout_width="80dp"
+          android:layout_height="80dp"
+          android:elevation="16dp"
+          app:civ_border_width="2dp"
+          app:civ_border_color="@color/white"
+          android:layout_marginTop="130dp"
+          android:layout_marginEnd="30dp"
+          android:src="@drawable/programming_language"
+          app:layout_constraintEnd_toEndOf="@+id/studentDetails"
+          app:layout_constraintTop_toTopOf="parent" />
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

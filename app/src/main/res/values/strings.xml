@@ -42,4 +42,25 @@
     <string name="my_courses">My Courses</string>
     <string name="programming_language">Programming Language</string>
     <string name="cme_121">CME 121</string>
+    <string name="assignments">Assignments</string>
+    <string name="notifications">Notifications</string>
+    <string name="developer_name">Etila Leonard Anibe</string>
+    <string name="student_no">Matric No:</string>
+    <string name="esm_2019_176_cme">Esm/2019/176/Cme</string>
+    <string name="course">Course:</string>
+    <string name="bachelor_of_engineering_in_n_computer_engineering">Bachelor of Engineering in\n Computer Engineering</string>
+    <string name="year">Year:</string>
+    <string name="_400_level">400 Level</string>
+    <string name="birth_date">Birth Date:</string>
+    <string name="_20_02_2000">20–02–2000</string>
+    <string name="gender">Gender:</string>
+    <string name="male">Male</string>
+    <string name="nationality">Nationality:</string>
+    <string name="nigeria">Nigeria</string>
+    <string name="email_">Email:</string>
+    <string name="etilaleonard25_gmail_com">etilaleonard25@gmail.com</string>
+    <string name="contact">Contact:</string>
+    <string name="_2348182697731">+2348182697731</string>
+    <string name="address">Police Housing Estate, Mife\n Oyigbo, Rivers State,\n Nigeria</string>
+    <string name="_def">Address:</string>
 </resources>

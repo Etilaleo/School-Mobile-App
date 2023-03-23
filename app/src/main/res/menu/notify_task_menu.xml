@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/assignments"
+        android:title="@string/assignments"
+        android:icon="@drawable/task"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/notifications"
+        android:title="@string/notifications"
+        android:icon="@drawable/notifications"
+        app:showAsAction="ifRoom"/>
+</menu>

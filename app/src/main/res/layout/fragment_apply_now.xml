@@ -154,7 +154,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
-                    android:enabled="false"
                     android:hint="@string/_20_02_2022"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -164,7 +163,8 @@
                         android:id="@+id/dateOfBirth"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:inputType="numberDecimal" />
+                        android:inputType="date"
+                        android:enabled="false"/>
 
                 </com.google.android.material.textfield.TextInputLayout>
 
