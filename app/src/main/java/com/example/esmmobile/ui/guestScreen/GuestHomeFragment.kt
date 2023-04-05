@@ -59,5 +59,9 @@ class GuestHomeFragment : Fragment() {
         binding.applyNowButton.setOnClickListener {
             findNavController().navigate(R.id.action_guestHomeFragment_to_applyNowFragment)
         }
+
+        binding.undergraduateCourseButton.setOnClickListener {
+            findNavController().navigate(R.id.action_guestHomeFragment_to_guestUndergraduateCoursesFragment)
+        }
     }
 }
