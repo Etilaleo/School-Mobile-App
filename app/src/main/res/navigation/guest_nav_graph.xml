@@ -15,6 +15,9 @@
         <action
             android:id="@+id/action_guestHomeFragment_to_applyNowFragment"
             app:destination="@id/applyNowFragment" />
+        <action
+            android:id="@+id/action_guestHomeFragment_to_guestUndergraduateCoursesFragment"
+            app:destination="@id/guestUndergraduateCoursesFragment" />
     </fragment>
     <activity
         android:id="@+id/login2"
@@ -26,4 +29,9 @@
         android:name="com.example.esmmobile.ui.guestScreen.ApplyNowFragment"
         android:label="fragment_apply_now"
         tools:layout="@layout/fragment_apply_now" />
+    <fragment
+        android:id="@+id/guestUndergraduateCoursesFragment"
+        android:name="com.example.esmmobile.ui.guestScreen.GuestUndergraduateCoursesFragment"
+        android:label="fragment_guest_undergraduate_courses"
+        tools:layout="@layout/fragment_guest_undergraduate_courses" />
 </navigation>

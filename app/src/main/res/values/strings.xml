@@ -63,4 +63,17 @@
     <string name="_2348182697731">+2348182697731</string>
     <string name="address">Police Housing Estate, Mife\n Oyigbo, Rivers State,\n Nigeria</string>
     <string name="_def">Address:</string>
+    <string name="march_2023">March 2023</string>
+    <string name="forward"><![CDATA[->]]></string>
+    <string name="back"><![CDATA[<-]]></string>
+    <string name="sun">SUN</string>
+    <string name="mon">MON</string>
+    <string name="tue">TUE</string>
+    <string name="wed">WED</string>
+    <string name="thur">THUR</string>
+    <string name="fri">FRI</string>
+    <string name="sat">SAT</string>
+    <string name="number">1</string>
+    <string name="_1">1</string>
+    <string name="item_undergrad_course">BEng. Computer Engineering</string>
 </resources>

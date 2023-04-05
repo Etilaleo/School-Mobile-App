@@ -24,7 +24,7 @@ class ProfileFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val title = getString(R.string.profile)
+        val title =  getString(R.string.profile)
         val actionbar = (activity as AppCompatActivity).supportActionBar!!
         actionbar.title = "| $title"
     }

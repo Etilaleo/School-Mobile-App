@@ -18,6 +18,7 @@
         android:icon="@drawable/apply_now"/>
 
     <item
+        android:id="@+id/guestUndergraduateCoursesFragment"
         android:title="@string/our_courses"
         android:icon="@drawable/our_courses"/>
 

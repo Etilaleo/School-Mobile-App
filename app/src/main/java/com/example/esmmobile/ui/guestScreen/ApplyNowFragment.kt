@@ -1,5 +1,6 @@
 package com.example.esmmobile.ui.guestScreen
 
+import android.content.Context
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -8,6 +9,7 @@ import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import com.example.esmmobile.R
 import com.example.esmmobile.databinding.FragmentApplyNowBinding
+import java.util.*
 
 class ApplyNowFragment : Fragment() {
 
@@ -18,10 +20,6 @@ class ApplyNowFragment : Fragment() {
     ): View {
         // Inflate the layout for this fragment
         binding = FragmentApplyNowBinding.inflate(layoutInflater)
-
-        val actionBarTitle = getString(R.string.apply_now)
-        val actionBar  = (activity as AppCompatActivity).supportActionBar!!
-        actionBar.title = actionBarTitle.uppercase()
 
         return binding.root
     }
@@ -39,5 +37,14 @@ class ApplyNowFragment : Fragment() {
 
 
         }
+    }
+
+    override fun onAttach(context: Context) {
+        super.onAttach(context)
+        val title = getString(R.string.apply_now)
+        val actionbar = (activity as AppCompatActivity).supportActionBar!!
+        actionbar.title = "| ${title.lowercase()
+            .replaceFirstChar { if (it.isLowerCase()) it.titlecase(Locale.ROOT) else it.toString() }}"
+
     }
 }
