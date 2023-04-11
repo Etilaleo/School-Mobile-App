@@ -10,7 +10,8 @@
         android:id="@+id/homeFragment"
         android:name="com.example.esmmobile.ui.mainScreen.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home"
+        />
     <fragment
         android:id="@+id/coursesFragment"
         android:name="com.example.esmmobile.ui.mainScreen.CoursesFragment"
