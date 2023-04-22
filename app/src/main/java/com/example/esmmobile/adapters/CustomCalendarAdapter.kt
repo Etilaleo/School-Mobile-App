@@ -2,7 +2,6 @@ package com.example.esmmobile.adapters
 
 import android.content.Context
 import android.graphics.Color
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -37,6 +36,13 @@ class CustomCalendarAdapter(context: Context) : ArrayAdapter<EventsFragment.Cale
             }
             else {
                 dayTextView.text = calendarDay.dateString.substringAfterLast("-")
+            }
+            //setting events marker
+            val fragment = EventsFragment()
+            fragment.eventList.forEach {
+                if (it.date == calendarDay.dateString && it.date != presentDate.format(Calendar.getInstance().time)) {
+                    eventMarker.visibility = View.VISIBLE
+                }
             }
         }
 

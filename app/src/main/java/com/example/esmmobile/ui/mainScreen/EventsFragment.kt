@@ -1,13 +1,15 @@
 package com.example.esmmobile.ui.mainScreen
 
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.esmmobile.EventsList
 import com.example.esmmobile.R
+import com.example.esmmobile.adapters.CalendarEventsAdapter
 import com.example.esmmobile.adapters.CustomCalendarAdapter
 import com.example.esmmobile.databinding.FragmentEventsBinding
 import java.text.SimpleDateFormat
@@ -19,6 +21,7 @@ class EventsFragment : Fragment() {
     private lateinit var binding: FragmentEventsBinding
     private lateinit var mCalendar: Calendar
     private lateinit var mAdapter: CustomCalendarAdapter
+    var eventList = EventsList.theList()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -42,14 +45,22 @@ class EventsFragment : Fragment() {
         setupCalendar()
 
         binding.calenderGrid.adapter = mAdapter
-        binding.calenderGrid .setOnItemClickListener { parent, view, position, id ->
-            val dateString = mAdapter.getItem(position)
-            // Handle item click here
-        }
+//        binding.calenderGrid .setOnItemClickListener { parent, view, position, id ->
+//            val dateString = mAdapter.getItem(position)
+//            // Handle item click here
+//        }
 
         //Changing the month to different months.
         binding.previousMonth.setOnClickListener { previousMonth() }
         binding.nextMonth.setOnClickListener { nextMonth() }
+
+
+        val eventAdapter = CalendarEventsAdapter(requireContext(), eventList)
+        binding.eventRecycler.apply{
+            layoutManager = LinearLayoutManager(requireContext())
+            adapter = eventAdapter
+            setHasFixedSize(true)
+        }
     }
 
     private fun setupCalendar() {

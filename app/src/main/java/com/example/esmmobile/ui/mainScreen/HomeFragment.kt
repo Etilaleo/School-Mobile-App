@@ -6,7 +6,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
-import com.denzcoskun.imageslider.models.SlideModel
 import com.example.esmmobile.R
 import com.example.esmmobile.databinding.FragmentHomeBinding
 

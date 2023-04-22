@@ -28,11 +28,8 @@ class PdfViewFragment : Fragment() {
 
         Toast.makeText(requireContext(),"$courseName", Toast.LENGTH_LONG).show()
 
-        // Get the PDFView object from the layout
-        val pdfView = binding.pdfView
-
         // Load the PDF file from the assets folder
-        pdfView.fromAsset("software_engineering.pdf")
+        binding.pdfView.fromAsset("software_engineering.pdf")
             .defaultPage(0)
             .enableSwipe(true)
             .swipeHorizontal(false)
