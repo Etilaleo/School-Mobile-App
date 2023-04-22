@@ -14,7 +14,11 @@
 
         <include
             android:id="@+id/faculty"
-            layout="@layout/faculty_design"/>
+            layout="@layout/faculty_design"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/titleAsACCourse"

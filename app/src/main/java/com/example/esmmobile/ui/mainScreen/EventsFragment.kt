@@ -1,6 +1,7 @@
 package com.example.esmmobile.ui.mainScreen
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -16,8 +17,7 @@ import java.util.*
 class EventsFragment : Fragment() {
 
     private lateinit var binding: FragmentEventsBinding
-
-    lateinit var mCalendar: Calendar
+    private lateinit var mCalendar: Calendar
     private lateinit var mAdapter: CustomCalendarAdapter
 
     override fun onCreateView(
@@ -56,7 +56,6 @@ class EventsFragment : Fragment() {
         val monthYearFormat = SimpleDateFormat("MMMM yyyy", Locale.getDefault())
 
         // Set current month and year
-        mCalendar.set(Calendar.DAY_OF_MONTH, 1)
         val monthYearString = monthYearFormat.format(mCalendar.time)
         binding.monthYear.text = monthYearString
 
@@ -80,8 +79,17 @@ class EventsFragment : Fragment() {
 
         // Add items for each day of the month
         for (i in 1..numberOfDaysInMonth) {
-            val dateString = "${mCalendar.get(Calendar.YEAR)}-${mCalendar.get(Calendar.MONTH) + 1}-$i"
-            days.add(CalendarDay(dateString))
+            val currentMonth = mCalendar.get(Calendar.MONTH) + 1
+            if (currentMonth < 9) {
+                val dateString =
+                    "${mCalendar.get(Calendar.YEAR)}-0${mCalendar.get(Calendar.MONTH) + 1}-$i"
+                days.add(CalendarDay(dateString))
+            }
+            else{
+                val dateString =
+                    "${mCalendar.get(Calendar.YEAR)}-${mCalendar.get(Calendar.MONTH) + 1}-$i"
+                days.add(CalendarDay(dateString))
+            }
         }
 
         return days
@@ -97,6 +105,8 @@ class EventsFragment : Fragment() {
         setupCalendar()
     }
 
-    data class CalendarDay(val dateString: String)
 
+    data class CalendarDay(
+        val dateString: String
+        )
 }

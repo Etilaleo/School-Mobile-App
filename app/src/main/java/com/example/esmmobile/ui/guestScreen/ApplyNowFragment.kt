@@ -27,6 +27,11 @@ class ApplyNowFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        val title = getString(R.string.apply_now)
+        val actionbar = (activity as AppCompatActivity).supportActionBar!!
+        actionbar.title = "| ${title.lowercase()
+            .replaceFirstChar { if (it.isLowerCase()) it.titlecase(Locale.ROOT) else it.toString() }}"
+
         binding.fillFormBtn.setOnClickListener {
             if (binding.formMaterialCard.visibility == View.GONE) {
                 binding.formMaterialCard.visibility = View.VISIBLE
@@ -37,14 +42,5 @@ class ApplyNowFragment : Fragment() {
 
 
         }
-    }
-
-    override fun onAttach(context: Context) {
-        super.onAttach(context)
-        val title = getString(R.string.apply_now)
-        val actionbar = (activity as AppCompatActivity).supportActionBar!!
-        actionbar.title = "| ${title.lowercase()
-            .replaceFirstChar { if (it.isLowerCase()) it.titlecase(Locale.ROOT) else it.toString() }}"
-
     }
 }

@@ -64,16 +64,11 @@
         <item name="android:textColor">@color/black</item>
     </style>
 
-    <style name="textProfileLight" parent="ThemeOverlay.Material3.AutoCompleteTextView">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:textSize">16sp</item>
+    <style name="imageNextSrcStyle">
+        <item name="android:src">@drawable/right</item>
     </style>
 
-    <style name="textProfileBold" parent="ThemeOverlay.Material3.AutoCompleteTextView">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:textSize">16sp</item>
-        <item name="android:textStyle">bold</item>
+    <style name="imagePrevoiusSrcStyle">
+        <item name="android:src">@drawable/previous</item>
     </style>
 </resources>

@@ -21,6 +21,5 @@ class SplashScreen : AppCompatActivity() {
             startActivity(Intent(this, GuestPages::class.java))
             finish()
         }, 3000)
-
     }
 }

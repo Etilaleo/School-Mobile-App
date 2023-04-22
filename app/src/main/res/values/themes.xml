@@ -27,7 +27,7 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
-        <item name="colorControlNormal">@color/white</item>
+        <item name="colorControlNormal">@color/white</item> <!-- this sets the icon on the toolbar. -->
     </style>
 
     <style name="button">
@@ -76,6 +76,14 @@
     <style name="imageSlider">
         <item name="android:background">#E0E6F3</item>
         <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="imageNextSrcStyle">
+        <item name="android:src">@drawable/next</item>
+    </style>
+
+    <style name="imagePrevoiusSrcStyle">
+        <item name="android:src">@drawable/left</item>
     </style>
 
 </resources>

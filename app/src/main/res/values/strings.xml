@@ -66,14 +66,16 @@
     <string name="march_2023">March 2023</string>
     <string name="forward"><![CDATA[->]]></string>
     <string name="back"><![CDATA[<-]]></string>
-    <string name="sun">SUN</string>
-    <string name="mon">MON</string>
-    <string name="tue">TUE</string>
-    <string name="wed">WED</string>
-    <string name="thur">THUR</string>
-    <string name="fri">FRI</string>
-    <string name="sat">SAT</string>
+    <string name="sun">S</string>
+    <string name="mon">M</string>
+    <string name="tue">T</string>
+    <string name="wed">W</string>
+    <string name="thur">T</string>
+    <string name="fri">F</string>
+    <string name="sat">S</string>
     <string name="number">1</string>
     <string name="_1">1</string>
     <string name="item_undergrad_course">BEng. Computer Engineering</string>
+    <string name="event_marker">Event Marker</string>
+    <string name="id_el_fitr">id el Fitr</string>
 </resources>

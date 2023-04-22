@@ -30,6 +30,7 @@ class GuestPages : AppCompatActivity() {
 
     }
 
+    //This sets the up-back button on the appbar to always return to the main HomePage.
     override fun onSupportNavigateUp(): Boolean {
         val navHostFragment =
             supportFragmentManager.findFragmentById(R.id.fragmentContainerView) as NavHostFragment
