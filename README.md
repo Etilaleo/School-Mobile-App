@@ -1,5 +1,5 @@
-# Esm_-mobile
-This is a School App that integrates a lot of properties to help students in learning.
+## School Mobile App
+This is an App that integrates a lot of properties to help students in learning.
 Each student will have a unique matriculation number and a password that they can use
 to login and they can change the password anytime. This is a personal project.
 
