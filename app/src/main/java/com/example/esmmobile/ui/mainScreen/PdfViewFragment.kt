@@ -6,6 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
+import com.example.esmmobile.R
 import com.example.esmmobile.databinding.FragmentPdfViewFragmetBinding
 import com.github.barteksc.pdfviewer.scroll.DefaultScrollHandle
 
@@ -21,6 +23,10 @@ class PdfViewFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        val actionBarTitle = "Course PDF"
+        val actionBar  = (activity as AppCompatActivity).supportActionBar!!
+        actionBar.title = actionBarTitle
+        actionBar.setDisplayHomeAsUpEnabled(true)
 
         //Getting name of clicked pdf
         val data = arguments
