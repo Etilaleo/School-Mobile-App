@@ -27,11 +27,10 @@ To build this project, you will require:
 * Android Studio
 
 ## ScreenShots
-<p align="center">
 ![](app/src/main/res/drawable-v24/the_image.png)
 ![](app/src/main/res/drawable-v24/second_image.png)
 ![](app/src/main/res/drawable/readme_image.png)
-</p>
+
 
 ## Author
 Leonard Etila Anibe
