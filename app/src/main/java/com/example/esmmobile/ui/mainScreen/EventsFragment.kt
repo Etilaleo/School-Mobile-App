@@ -31,8 +31,9 @@ class EventsFragment : Fragment() {
         binding = FragmentEventsBinding.inflate(layoutInflater)
 
         val title = getString(R.string.events)
-        val actionbar = (activity as AppCompatActivity).supportActionBar!!
-        actionbar.title = "| $title"
+        val actionBar = (activity as AppCompatActivity).supportActionBar!!
+        actionBar.title = "| $title"
+        actionBar.setDisplayHomeAsUpEnabled(false)
 
         return binding.root
     }
@@ -69,6 +70,7 @@ class EventsFragment : Fragment() {
         // Set current month and year
         val monthYearString = monthYearFormat.format(mCalendar.time)
         binding.monthYear.text = monthYearString
+        mCalendar.set(Calendar.DAY_OF_MONTH, 1)
 
 
 
@@ -91,7 +93,7 @@ class EventsFragment : Fragment() {
         // Add items for each day of the month
         for (i in 1..numberOfDaysInMonth) {
             val currentMonth = mCalendar.get(Calendar.MONTH) + 1
-            if (currentMonth < 9) {
+            if (currentMonth <= 9) {
                 val dateString =
                     "${mCalendar.get(Calendar.YEAR)}-0${mCalendar.get(Calendar.MONTH) + 1}-$i"
                 days.add(CalendarDay(dateString))
