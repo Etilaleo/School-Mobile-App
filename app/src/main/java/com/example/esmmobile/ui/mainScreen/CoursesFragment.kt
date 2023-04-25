@@ -34,7 +34,7 @@ class CoursesFragment : Fragment() {
 
         val actionBarTitle = getString(R.string.courses)
         val actionBar  = (activity as AppCompatActivity).supportActionBar!!
-        actionBar.title = actionBarTitle
+        actionBar.title = "|$actionBarTitle"
         actionBar.setDisplayHomeAsUpEnabled(false)
 
         coursePdfRecycler(view)

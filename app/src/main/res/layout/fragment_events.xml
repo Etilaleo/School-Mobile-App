@@ -10,11 +10,12 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="12dp">
+        android:padding="12dp"
+        android:background="@color/white">
 
         <ImageView
             android:id="@+id/previousMonth"
-            style="@style/imagePrevoiusSrcStyle"
+            android:src="@drawable/left"
             android:layout_width="25dp"
             android:layout_height="25dp"
             android:layout_marginStart="40dp"
@@ -32,6 +33,7 @@
             android:textAlignment="center"
             android:textSize="16sp"
             android:textStyle="bold"
+            android:textColor="#7A7A7A"
             app:layout_constraintBottom_toBottomOf="@+id/previousMonth"
             app:layout_constraintEnd_toStartOf="@+id/nextMonth"
             app:layout_constraintStart_toEndOf="@+id/previousMonth"
@@ -39,7 +41,7 @@
 
         <ImageView
             android:id="@+id/nextMonth"
-            style="@style/imageNextSrcStyle"
+            android:src="@drawable/next"
             android:layout_width="25dp"
             android:layout_height="25dp"
             android:layout_marginTop="15dp"
@@ -62,6 +64,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/sun"
+                android:textColor="#7A7A7A"
                 android:textAlignment="center"
                 android:textSize="15sp" />
 
@@ -70,6 +73,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/mon"
+                android:textColor="#7A7A7A"
                 android:textAlignment="center"
                 android:textSize="15sp" />
 
@@ -78,6 +82,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/tue"
+                android:textColor="#7A7A7A"
                 android:textAlignment="center"
                 android:textSize="15sp" />
 
@@ -86,6 +91,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/wed"
+                android:textColor="#7A7A7A"
                 android:textAlignment="center"
                 android:textSize="15sp" />
 
@@ -94,6 +100,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/thur"
+                android:textColor="#7A7A7A"
                 android:textAlignment="center"
                 android:textSize="15sp" />
 
@@ -102,6 +109,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/fri"
+                android:textColor="#7A7A7A"
                 android:textAlignment="center"
                 android:textSize="15sp" />
 
@@ -110,6 +118,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/sat"
+                android:textColor="#7A7A7A"
                 android:textAlignment="center"
                 android:textSize="15sp" />
 
@@ -135,6 +144,7 @@
             android:layout_marginTop="20dp"
             android:text="@string/events"
             android:textSize="18sp"
+            android:textColor="#7A7A7A"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/calenderGrid" />

@@ -24,7 +24,8 @@ class GuestHomeFragment : Fragment() {
 
         val actionBarTitle = getString(R.string.app_name)
         val actionBar  = (activity as AppCompatActivity).supportActionBar!!
-        actionBar.title = actionBarTitle.uppercase()
+        actionBar.title = actionBarTitle
+        actionBar.show()
 
         return binding.root
     }
@@ -32,25 +33,7 @@ class GuestHomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-
-        //Creating a loginMenu
-        val menu : MenuHost = requireActivity()
-        menu.addMenuProvider(object : MenuProvider{
-            override fun onCreateMenu(menu: Menu, menuInflater: MenuInflater) {
-                menuInflater.inflate(R.menu.guest_login_menu, menu)
-            }
-
-            override fun onMenuItemSelected(menuItem: MenuItem): Boolean {
-                return when (menuItem.itemId) {
-                    R.id.loginMenu -> {
-                        findNavController().navigate(R.id.action_guestHomeFragment_to_login2)
-                        true
-                    }
-                    else -> false
-                }
-            }
-        }, viewLifecycleOwner, Lifecycle.State.RESUMED)
-
+        menuLogin()
 
         val animation  = AnimationUtils.loadAnimation(requireContext(), R.anim.guest_home_animation)
         animation.duration = 1500
@@ -63,5 +46,25 @@ class GuestHomeFragment : Fragment() {
         binding.undergraduateCourseButton.setOnClickListener {
             findNavController().navigate(R.id.action_guestHomeFragment_to_guestUndergraduateCoursesFragment)
         }
+    }
+
+    private fun menuLogin() {
+        //Creating a loginMenu
+        val menu : MenuHost = requireActivity()
+        menu.addMenuProvider(object : MenuProvider{
+            override fun onCreateMenu(menu: Menu, menuInflater: MenuInflater) {
+                menuInflater.inflate(R.menu.guest_login_menu, menu)
+            }
+
+            override fun onMenuItemSelected(menuItem: MenuItem): Boolean {
+                return when (menuItem.itemId) {
+                    R.id.loginMenu -> {
+                        findNavController().navigate(R.id.action_guestHomeFragment_to_loginFragment)
+                        true
+                    }
+                    else -> false
+                }
+            }
+        }, viewLifecycleOwner, Lifecycle.State.RESUMED)
     }
 }

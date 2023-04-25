@@ -25,14 +25,6 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".ui.Login"
-            android:exported="false"
-            android:theme="@style/noActionBar" >
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
             android:name=".ui.SplashScreen"
             android:exported="true"
             android:theme="@style/noActionBar" >

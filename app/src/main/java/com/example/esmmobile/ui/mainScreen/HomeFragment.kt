@@ -21,9 +21,14 @@ class HomeFragment : Fragment() {
         return binding.root
     }
 
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        actionBar()
 
+    }
+
+    private fun actionBar() {
         val actionBarTitle = getString(R.string.app_name)
         val actionBar  = (activity as AppCompatActivity).supportActionBar!!
         actionBar.title = "| $actionBarTitle"
