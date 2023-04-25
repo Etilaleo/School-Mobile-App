@@ -33,6 +33,7 @@ class CustomCalendarAdapter(context: Context) : ArrayAdapter<EventsFragment.Cale
             if (presentDate.format(Calendar.getInstance().time) == calendarDay.dateString) {
                 dayTextView.text = calendarDay.dateString.substringAfterLast("-")
                 dayTextView.setBackgroundResource(R.drawable.calender_day_background)
+                dayTextView.setTextColor(Color.WHITE)
             }
             else {
                 dayTextView.text = calendarDay.dateString.substringAfterLast("-")
