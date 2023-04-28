@@ -8,6 +8,8 @@ import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.denzcoskun.imageslider.constants.ScaleTypes
+import com.denzcoskun.imageslider.models.SlideModel
 import com.example.esmmobile.EventsList
 import com.example.esmmobile.R
 import com.example.esmmobile.adapters.CalendarEventsAdapter
@@ -31,6 +33,7 @@ class HomeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         actionBar()
 
+        imageSlider()
         events()
         binding.eventsSeeMore.setOnClickListener {
             findNavController().navigate(R.id.action_homeFragment_to_eventsFragment)
@@ -43,6 +46,16 @@ class HomeFragment : Fragment() {
         actionBar.title = "| $actionBarTitle"
         actionBar.setDisplayHomeAsUpEnabled(false)
         actionBar.hide()
+    }
+
+    private fun imageSlider() {
+        val imageList = arrayListOf(
+            SlideModel(R.drawable.programming_language, "Programming Language", ScaleTypes.CENTER_CROP),
+            SlideModel(R.drawable.software_development, "Software Development", ScaleTypes.CENTER_CROP),
+            SlideModel(R.drawable.undergraduate_courses, ScaleTypes.CENTER_CROP),
+        )
+
+        binding.imageSlider.setImageList(imageList)
     }
 
     private fun events() {
