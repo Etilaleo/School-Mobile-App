@@ -6,12 +6,16 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.esmmobile.EventsList
 import com.example.esmmobile.R
+import com.example.esmmobile.adapters.CalendarEventsAdapter
 import com.example.esmmobile.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {
 
     private lateinit var binding: FragmentHomeBinding
+    var eventList = EventsList.theList()
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -26,11 +30,22 @@ class HomeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         actionBar()
 
+        events()
+
     }
 
     private fun actionBar() {
         val actionBarTitle = getString(R.string.app_name)
         val actionBar  = (activity as AppCompatActivity).supportActionBar!!
         actionBar.title = "| $actionBarTitle"
+    }
+
+    private fun events() {
+        val eventAdapter  = CalendarEventsAdapter(requireContext(), eventList)
+        binding.eventsForHomeRecycler.apply {
+            setHasFixedSize(true)
+            layoutManager = LinearLayoutManager(requireContext())
+            adapter = eventAdapter
+        }
     }
 }

@@ -13,7 +13,7 @@
     <string name="latest_news">Latest News</string>
     <string name="title_activity_guest_page">GuestPage</string>
     <string name="title_activity_guest_pages">GuestPages</string>
-    <string name="esm_name">Ecole Superiure De Management, Benin \nESM</string>
+    <string name="esm_name">Ecole Superieure De Management, Benin \nESM</string>
     <string name="home_menu">HOME</string>
     <string name="our_courses">OUR COURSES</string>
     <string name="login_menu">LOGIN</string>
@@ -78,4 +78,5 @@
     <string name="item_undergrad_course">BEng. Computer Engineering</string>
     <string name="event_marker">Event Marker</string>
     <string name="id_el_fitr">id el Fitr</string>
+    <string name="no_assignments">No assignments</string>
 </resources>
