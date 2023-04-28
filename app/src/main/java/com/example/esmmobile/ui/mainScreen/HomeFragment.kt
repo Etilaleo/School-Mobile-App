@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.esmmobile.EventsList
 import com.example.esmmobile.R
@@ -31,7 +32,9 @@ class HomeFragment : Fragment() {
         actionBar()
 
         events()
-
+        binding.eventsSeeMore.setOnClickListener {
+            findNavController().navigate(R.id.action_homeFragment_to_eventsFragment)
+        }
     }
 
     private fun actionBar() {

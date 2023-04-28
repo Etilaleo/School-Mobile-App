@@ -11,7 +11,11 @@
         android:name="com.example.esmmobile.ui.mainScreen.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home"
-        />
+        >
+        <action
+            android:id="@+id/action_homeFragment_to_eventsFragment"
+            app:destination="@id/eventsFragment" />
+    </fragment>
     <fragment
         android:id="@+id/coursesFragment"
         android:name="com.example.esmmobile.ui.mainScreen.CoursesFragment"
