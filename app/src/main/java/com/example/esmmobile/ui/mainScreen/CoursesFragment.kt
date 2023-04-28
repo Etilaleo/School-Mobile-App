@@ -36,6 +36,7 @@ class CoursesFragment : Fragment() {
         val actionBar  = (activity as AppCompatActivity).supportActionBar!!
         actionBar.title = "|$actionBarTitle"
         actionBar.setDisplayHomeAsUpEnabled(false)
+        actionBar.show()
 
         coursePdfRecycler(view)
 

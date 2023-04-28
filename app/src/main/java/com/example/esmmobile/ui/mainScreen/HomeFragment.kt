@@ -41,6 +41,8 @@ class HomeFragment : Fragment() {
         val actionBarTitle = getString(R.string.app_name)
         val actionBar  = (activity as AppCompatActivity).supportActionBar!!
         actionBar.title = "| $actionBarTitle"
+        actionBar.setDisplayHomeAsUpEnabled(false)
+        actionBar.hide()
     }
 
     private fun events() {

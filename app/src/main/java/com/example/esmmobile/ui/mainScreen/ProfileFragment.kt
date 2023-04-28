@@ -27,5 +27,7 @@ class ProfileFragment : Fragment() {
         val title =  getString(R.string.profile)
         val actionbar = (activity as AppCompatActivity).supportActionBar!!
         actionbar.title = "| $title"
+        actionbar.setDisplayHomeAsUpEnabled(false)
+        actionbar.show()
     }
 }

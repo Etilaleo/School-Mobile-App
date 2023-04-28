@@ -33,6 +33,8 @@ class EventsFragment : Fragment() {
         val title = getString(R.string.events)
         val actionBar = (activity as AppCompatActivity).supportActionBar!!
         actionBar.title = "| $title"
+        actionBar.setDisplayHomeAsUpEnabled(false)
+        actionBar.show()
 
         return binding.root
     }
