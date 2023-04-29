@@ -11,13 +11,25 @@
         tools:layout="@layout/fragment_guest_home" >
         <action
             android:id="@+id/action_guestHomeFragment_to_applyNowFragment"
-            app:destination="@id/applyNowFragment" />
+            app:destination="@id/applyNowFragment"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit"
+            app:popEnterAnim="@anim/pop_enter"
+            app:popExitAnim="@anim/pop_exit" />
         <action
             android:id="@+id/action_guestHomeFragment_to_guestUndergraduateCoursesFragment"
-            app:destination="@id/guestUndergraduateCoursesFragment" />
+            app:destination="@id/guestUndergraduateCoursesFragment"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit"
+            app:popEnterAnim="@anim/pop_enter"
+            app:popExitAnim="@anim/pop_exit" />
         <action
             android:id="@+id/action_guestHomeFragment_to_loginFragment"
-            app:destination="@id/loginFragment" />
+            app:destination="@id/loginFragment"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit"
+            app:popEnterAnim="@anim/pop_enter"
+            app:popExitAnim="@anim/pop_exit" />
     </fragment>
     <fragment
         android:id="@+id/applyNowFragment"

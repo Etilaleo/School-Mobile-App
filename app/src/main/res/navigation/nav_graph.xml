@@ -14,7 +14,11 @@
         >
         <action
             android:id="@+id/action_homeFragment_to_eventsFragment"
-            app:destination="@id/eventsFragment" />
+            app:destination="@id/eventsFragment"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit"
+            app:popEnterAnim="@anim/pop_enter"
+            app:popExitAnim="@anim/pop_exit" />
     </fragment>
     <fragment
         android:id="@+id/coursesFragment"
@@ -23,13 +27,25 @@
         tools:layout="@layout/fragment_courses" >
         <action
             android:id="@+id/action_coursesFragment_to_pdfViewFragment"
-            app:destination="@id/pdfViewFragment" />
+            app:destination="@id/pdfViewFragment"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit"
+            app:popEnterAnim="@anim/pop_enter"
+            app:popExitAnim="@anim/pop_exit" />
         <action
             android:id="@+id/action_coursesFragment_to_notificationsFragment"
-            app:destination="@id/notificationsFragment" />
+            app:destination="@id/notificationsFragment"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit"
+            app:popEnterAnim="@anim/pop_enter"
+            app:popExitAnim="@anim/pop_exit" />
         <action
             android:id="@+id/action_coursesFragment_to_assignmentsFragment"
-            app:destination="@id/assignmentsFragment" />
+            app:destination="@id/assignmentsFragment"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit"
+            app:popEnterAnim="@anim/pop_enter"
+            app:popExitAnim="@anim/pop_exit" />
     </fragment>
     <fragment
         android:id="@+id/eventsFragment"
