@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     app:cardCornerRadius="17dp"
-    android:backgroundTint="@color/esm_color"
+    android:backgroundTint="@color/light_color"
     android:layout_margin="10dp"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
@@ -16,7 +16,7 @@
             android:id="@+id/eventText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
+            android:textSize="16sp"
             android:text="@string/id_el_fitr"
             android:paddingStart="14dp"
             android:paddingEnd="2dp"

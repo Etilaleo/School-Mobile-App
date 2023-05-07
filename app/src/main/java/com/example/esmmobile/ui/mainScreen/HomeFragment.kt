@@ -56,6 +56,7 @@ class HomeFragment : Fragment() {
         )
 
         binding.imageSlider.setImageList(imageList)
+        binding.imageSlider.startSliding(3000L)
     }
 
     private fun events() {

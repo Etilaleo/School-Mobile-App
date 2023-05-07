@@ -80,5 +80,9 @@
     <string name="id_el_fitr">id el Fitr</string>
     <string name="no_assignments">No assignments</string>
     <string name="see_more">See More</string>
-    <string name="good_morning_leonard">Good Morning, Leonard</string>
+    <string name="good_morning_leonard">Welcome Back, Leonard</string>
+    <string name="contact_head_of_department">Contact Head Of Department</string>
+    <string name="view_result">View Result</string>
+    <string name="main_home_background">Main Home Background</string>
+    <string name="no_notification">No Notification</string>
 </resources>
