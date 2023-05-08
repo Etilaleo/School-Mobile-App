@@ -14,11 +14,14 @@ import com.example.esmmobile.EventsList
 import com.example.esmmobile.R
 import com.example.esmmobile.adapters.CalendarEventsAdapter
 import com.example.esmmobile.databinding.FragmentHomeBinding
+import com.example.esmmobile.models.CalendarEventData
+import java.text.SimpleDateFormat
+import java.util.*
 
 class HomeFragment : Fragment() {
 
     private lateinit var binding: FragmentHomeBinding
-    var eventList = EventsList.theList()
+    private var eventList = EventsList.theList()
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -45,9 +48,10 @@ class HomeFragment : Fragment() {
         val actionBar  = (activity as AppCompatActivity).supportActionBar!!
         actionBar.title = "| $actionBarTitle"
         actionBar.setDisplayHomeAsUpEnabled(false)
-        actionBar.hide()
+        actionBar.show()
     }
 
+    //Adding to the Image slider
     private fun imageSlider() {
         val imageList = arrayListOf(
             SlideModel(R.drawable.programming_language, "Programming Language", ScaleTypes.CENTER_CROP),
@@ -59,8 +63,16 @@ class HomeFragment : Fragment() {
         binding.imageSlider.startSliding(3000L)
     }
 
+    //Adding Events
     private fun events() {
-        val eventAdapter  = CalendarEventsAdapter(requireContext(), eventList)
+        val newEventList = arrayListOf<CalendarEventData>()
+        val today = SimpleDateFormat("yyyy-MM-d", Locale.getDefault())
+        eventList.forEach {
+            if (it.date == today.format(Calendar.getInstance().time)) {
+                newEventList.add(it)
+            }
+        }
+        val eventAdapter  = CalendarEventsAdapter(requireContext(), newEventList)
         binding.eventsForHomeRecycler.apply {
             setHasFixedSize(true)
             layoutManager = LinearLayoutManager(requireContext())

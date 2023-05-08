@@ -12,6 +12,8 @@ import com.example.esmmobile.R
 import com.example.esmmobile.adapters.CalendarEventsAdapter
 import com.example.esmmobile.adapters.CustomCalendarAdapter
 import com.example.esmmobile.databinding.FragmentEventsBinding
+import com.example.esmmobile.models.CalendarDay
+import com.example.esmmobile.models.CalendarEventData
 import java.text.SimpleDateFormat
 import java.util.*
 
@@ -57,7 +59,15 @@ class EventsFragment : Fragment() {
         binding.nextMonth.setOnClickListener { nextMonth() }
 
 
-        val eventAdapter = CalendarEventsAdapter(requireContext(), eventList)
+        //Adding Events
+        val newEventList = arrayListOf<CalendarEventData>()
+        val today = SimpleDateFormat("yyyy-MM-d", Locale.getDefault())
+        eventList.forEach {
+            if (it.date == today.format(Calendar.getInstance().time)) {
+                newEventList.add(it)
+            }
+        }
+        val eventAdapter = CalendarEventsAdapter(requireContext(), newEventList)
         binding.eventRecycler.apply{
             layoutManager = LinearLayoutManager(requireContext())
             adapter = eventAdapter
@@ -120,7 +130,5 @@ class EventsFragment : Fragment() {
     }
 
 
-    data class CalendarDay(
-        val dateString: String
-        )
+
 }
